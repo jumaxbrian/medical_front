@@ -14,20 +14,20 @@
         <form id="#">
           <div class="row form-group">
               <div class="col">                  
-                  <input type="text" class="form-control" id="firstName" placeholder="First Name">                  
+                  <input type="text" v-model="fname" class="form-control" id="firstName" placeholder="First Name">                  
                 </div>
                 <div class="col">                  
-                    <input type="text" class="form-control" id="lastName" placeholder="Last Name">                  
+                    <input type="text" v-model="lname" class="form-control" id="lastName" placeholder="Last Name">                  
                   </div>
           </div>
           <div class="row form-group">
             <div class="col">
                 <div class="form-check-inline">
-                    <input type="radio" class="form-check-input" id="gender_male" name="gender">
+                    <input type="radio" class="form-check-input" id="gender_male" value="male" v-model="gender" name="gender">
                     <label class="form-check-label" for="exampleCheck1">Male</label>
                   </div>
                   <div class="form-check-inline">
-                    <input type="radio" class="form-check-input" id="gender_female" name="gender">
+                    <input type="radio" class="form-check-input" id="gender_female" value="female" v-model="gender" name="gender">
                     <label class="form-check-label" for="exampleCheck1">Female</label>
                   </div>
             </div>
