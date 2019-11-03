@@ -9,9 +9,9 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="app">
         <p>New medical record</p>
-        <form>
+        <form id="#">
           <div class="row form-group">
               <div class="col">                  
                   <input type="text" class="form-control" id="firstName" placeholder="First Name">                  
@@ -33,7 +33,7 @@
             </div>
             <div class="col ">
                 <!-- <div class="form-group">                   -->
-                    <input type="text" class="form-control" id="age" placeholder="Age">                  
+                    <input type="number" class="form-control" id="age" placeholder="Age">                  
                   <!-- </div> -->
             </div>
               
@@ -95,7 +95,7 @@
         </div>
       </div>
       <div class="row form-group" id="list">
-
+          <p> Jean DuPont (Male), 46-Paris (France) </p>
         </div>
         <div class="row form-group">
 
@@ -106,4 +106,12 @@
 
 </div>
 </body>
+<script>
+var app = new Vue({
+  el: '#app',
+  data: {
+    users: []
+  }
+})
+</script>
 </html>
